@@ -1,5 +1,5 @@
 
-// Without spread operator
+// Without Rest parameter
 function add(a,b){
 
     return a+b;
@@ -7,9 +7,9 @@ function add(a,b){
 
 console.log(add(2,4));
 
-// With spread operator
+// With Rest parameter
 
-function addUsingSpread(...arrayinput){
+function addUsingRestParameter(...arrayinput){
 
     let sum = 0;
     for(let i of arrayinput){
@@ -17,5 +17,5 @@ function addUsingSpread(...arrayinput){
     }
     return sum;
 }
-console.log("added 3 numbers. Result is : "+addUsingSpread(1,2,3));
-console.log("added 5 numbers. Result is : "+addUsingSpread(1,2,3,4,5));
+console.log("added 3 numbers. Result is : "+addUsingRestParameter(1,2,3));
+console.log("added 5 numbers. Result is : "+addUsingRestParameter(1,2,3,4,5));
